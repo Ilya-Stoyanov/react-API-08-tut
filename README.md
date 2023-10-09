@@ -20,7 +20,7 @@ npm i json-server
 npm start
 ```
 
-## add folder data and file db.json
+## Add folder data and file db.json
 
 ```bash
 {
@@ -49,7 +49,7 @@ npm start
 npx json-server -p 3500 -w data/db.json
 ```
 
-## add API URL
+## Add API URL
 ```bash
 const API_URL = "http://localhost:3500/items"
 
@@ -90,12 +90,12 @@ update function fetchItems
     }
 ```
 
-## update component Content
+## Update component Content
 ```bash
 {fetchError && <h2 className="error">{`Error: ${fetchError}`}</h2>}
 ```
 
-## update Loading
+## Update Loading
 ```bash
 const [isLoading, setIsLoading] = useState(true)
 
@@ -117,7 +117,7 @@ const fetchItems = async () => {
       }
     }
 ```
-## add async in useEffect 
+## Add async in useEffect 
 ```bash
 
 setTimeout(() => {
@@ -126,7 +126,7 @@ setTimeout(() => {
 
 ```
 
-## upgrade component Content
+## Upgrade component Content
 
 ```bash
 {fetchError && <h2 className="error">{`Error: ${fetchError}`}</h2>}
