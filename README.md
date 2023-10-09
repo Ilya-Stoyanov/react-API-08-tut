@@ -53,7 +53,6 @@ npx json-server -p 3500 -w data/db.json
 ```bash
 const API_URL = "http://localhost:3500/items"
 
-change status useState([])
 const [items, setItems] = useState([]);
 
 add function fetchItems
@@ -80,7 +79,6 @@ update function fetchItems
         const response = await fetch(API_URL)
         const listItems = await response.json()
         if(!response.ok) throw Error("Did not receive list items")
-        // console.log(listItems);
         setItems(listItems)
         setFetchError(null)
       } catch (error) {
@@ -106,7 +104,6 @@ const fetchItems = async () => {
         const response = await fetch(API_URL)
         const listItems = await response.json()
         if(!response.ok) throw Error("Did not receive list items")
-        // console.log(listItems);
         setItems(listItems)
         setFetchError(null)
       } catch (error) {
